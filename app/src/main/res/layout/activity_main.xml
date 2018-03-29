@@ -6,7 +6,7 @@
 
 <LinearLayout
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:padding="16dp"
     android:orientation="vertical">
 
@@ -18,6 +18,7 @@
         android:textSize="56sp"/>
 
     <EditText
+        android:hint=""
         android:id="@+id/name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -31,8 +32,9 @@
         android:layout_height="wrap_content"
         android:padding="24dp"
         android:onClick="startQuiz"
-        android:text="GO!"
+        android:text="@string/start_quiz"
         android:textSize="36sp" />
 
 </LinearLayout>
+
 </ScrollView>

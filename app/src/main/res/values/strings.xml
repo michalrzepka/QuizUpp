@@ -1,3 +1,27 @@
 <resources>
     <string name="app_name">QuizUpp</string>
+    <string name="welcome">Welcome!\n\nPlease enter your name</string>
+    <string name="question_1">1. In which of those countries you can\'t pay in euro?</string>
+    <string name="question_1_answer_A">Denmark</string>
+    <string name="question_1_answer_B">Norway</string>
+    <string name="question_1_answer_C">Sweden</string>
+    <string name="question_1_answer_D">Poland</string>
+    <string name="question_2">2. Which country has the smallest capital city?</string>
+    <string name="question_2_answer_A">Iceland</string>
+    <string name="question_2_answer_B">Luxembourg</string>
+    <string name="question_2_answer_C">Malta</string>
+    <string name="question_2_answer_D">Switzerland</string>
+    <string name="question_3">3. Which cities are in top 10 most visited in the world?</string>
+    <string name="question_3_answer_A">London</string>
+    <string name="question_3_answer_B">Barcelona</string>
+    <string name="question_3_answer_C">Paris</string>
+    <string name="question_3_answer_D">Berlin</string>
+    <string name="question_4">4. Which country has the biggest airport in Europe?</string>
+    <string name="question_4_answer_A">Germany</string>
+    <string name="question_4_answer_B">France</string>
+    <string name="question_4_answer_C">United Kingdom</string>
+    <string name="question_4_answer_D">Spain</string>
+    <string name="question_5">5. How many stars are on the European Union flag?</string>
+    <string name="start_quiz">Start quiz</string>
+    <string name="submit_quiz">Submit quiz</string>
 </resources>

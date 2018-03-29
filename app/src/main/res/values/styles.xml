@@ -8,9 +8,16 @@
         <item name="colorAccent">@color/colorAccent</item>
 
         <item name="android:fontFamily">sans-serif-condensed</item>
-        <item name="android:layout_margin">16dp</item>
+        <item name="android:textColor">@android:color/black</item>
         <item name="android:textSize">16sp</item>
 
     </style>
+
+    <style name="RadioButton" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:fontFamily">sans-serif-condensed</item>
+        <item name="android:textSize">16sp</item>
+
+    </style>
+
 
 </resources>
