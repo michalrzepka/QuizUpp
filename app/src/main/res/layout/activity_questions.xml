@@ -1,36 +1,36 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context="pl.rzepka.quizupp.QuizQuestions"
+    android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_width="match_parent">
+    tools:context="pl.rzepka.quizupp.QuizQuestions">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="8dp"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:padding="8dp">
 
         <TextView
             android:id="@+id/welcome"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="8dp"
-            android:textSize="22sp"/>
+            android:textSize="22sp" />
 
         <LinearLayout
             android:id="@+id/question_1_wrapper"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="8dp"
-            android:padding="2dp"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:padding="2dp">
 
             <TextView
                 android:id="@+id/question_1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/question_1"
-                android:layout_marginBottom="8dp"/>
+                android:layout_marginBottom="8dp"
+                android:text="@string/question_1" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -40,8 +40,8 @@
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:layout_weight="1">
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
 
                     <CheckBox
                         android:id="@+id/question_1_answer_A"
@@ -57,8 +57,8 @@
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:layout_weight="1">
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
 
                     <CheckBox
                         android:id="@+id/question_1_answer_B"
@@ -74,8 +74,8 @@
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:layout_weight="1">
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
 
                     <CheckBox
                         android:id="@+id/question_1_answer_C"
@@ -91,8 +91,8 @@
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:layout_weight="1">
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
 
                     <CheckBox
                         android:id="@+id/question_1_answer_D"
@@ -120,8 +120,8 @@
                 android:id="@+id/question_2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/question_2"
-                android:layout_marginBottom="8dp"/>
+                android:layout_marginBottom="8dp"
+                android:text="@string/question_2" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -134,32 +134,32 @@
                     android:layout_height="match_parent">
 
                     <RadioButton
-                        style="@style/RadioButton"
                         android:id="@+id/question_2_answer_A"
+                        style="@style/RadioButton"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/question_2_answer_A"/>
+                        android:text="@string/question_2_answer_A" />
 
                     <RadioButton
-                        style="@style/RadioButton"
                         android:id="@+id/question_2_answer_B"
+                        style="@style/RadioButton"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/question_2_answer_B"/>
+                        android:text="@string/question_2_answer_B" />
 
                     <RadioButton
-                        style="@style/RadioButton"
                         android:id="@+id/question_2_answer_C"
+                        style="@style/RadioButton"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/question_2_answer_C"/>
+                        android:text="@string/question_2_answer_C" />
 
                     <RadioButton
-                        style="@style/RadioButton"
                         android:id="@+id/question_2_answer_D"
+                        style="@style/RadioButton"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/question_2_answer_D"/>
+                        android:text="@string/question_2_answer_D" />
 
                 </RadioGroup>
 
@@ -172,15 +172,15 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="8dp"
-            android:padding="2dp"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:padding="2dp">
 
             <TextView
                 android:id="@+id/question_3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/question_3"
-                android:layout_marginBottom="8dp"/>
+                android:layout_marginBottom="8dp"
+                android:text="@string/question_3" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -190,8 +190,8 @@
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:layout_weight="1">
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
 
                     <CheckBox
                         android:id="@+id/question_3_answer_A"
@@ -207,8 +207,8 @@
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:layout_weight="1">
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
 
                     <CheckBox
                         android:id="@+id/question_3_answer_B"
@@ -224,8 +224,8 @@
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:layout_weight="1">
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
 
                     <CheckBox
                         android:id="@+id/question_3_answer_C"
@@ -241,8 +241,8 @@
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:layout_weight="1">
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
 
                     <CheckBox
                         android:id="@+id/question_3_answer_D"
@@ -270,8 +270,8 @@
                 android:id="@+id/question_4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/question_4"
-                android:layout_marginBottom="8dp"/>
+                android:layout_marginBottom="8dp"
+                android:text="@string/question_4" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -284,29 +284,29 @@
                     android:layout_height="match_parent">
 
                     <RadioButton
-                        style="@style/RadioButton"
                         android:id="@+id/question_4_answer_A"
+                        style="@style/RadioButton"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/question_4_answer_A"/>
+                        android:text="@string/question_4_answer_A" />
 
                     <RadioButton
-                        style="@style/RadioButton"
                         android:id="@+id/question_4_answer_B"
+                        style="@style/RadioButton"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/question_4_answer_B" />
 
                     <RadioButton
-                        style="@style/RadioButton"
                         android:id="@+id/question_4_answer_C"
+                        style="@style/RadioButton"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/question_4_answer_C" />
 
                     <RadioButton
-                        style="@style/RadioButton"
                         android:id="@+id/question_4_answer_D"
+                        style="@style/RadioButton"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/question_4_answer_D" />
@@ -328,15 +328,15 @@
                 android:id="@+id/question_5"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/question_5"
-                android:layout_marginBottom="8dp"/>
+                android:layout_marginBottom="8dp"
+                android:text="@string/question_5" />
 
             <EditText
-                android:hint=""
                 android:id="@+id/question_5_answer"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="number"/>
+                android:hint=""
+                android:inputType="number" />
 
         </LinearLayout>
 

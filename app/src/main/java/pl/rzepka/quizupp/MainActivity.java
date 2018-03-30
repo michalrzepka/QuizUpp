@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void startQuiz(View view) {
-        Intent intent = new Intent (this, QuizQuestions.class);
+        Intent intent = new Intent(this, QuizQuestions.class);
         EditText editText = (EditText) findViewById(R.id.name);
         name = editText.getText().toString().trim();
         intent.putExtra(EXTRA_NAME, name);

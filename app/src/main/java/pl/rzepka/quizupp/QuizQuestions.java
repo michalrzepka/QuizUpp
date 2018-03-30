@@ -29,7 +29,7 @@ public class QuizQuestions extends AppCompatActivity {
         textView.setText(welcomeMessage);
     }
 
-    public int countPoints(){
+    public int countPoints() {
 
         score = 0;
 
@@ -38,40 +38,56 @@ public class QuizQuestions extends AppCompatActivity {
         CheckBox question_1_answer_C = (CheckBox) findViewById(R.id.question_1_answer_C);
         CheckBox question_1_answer_D = (CheckBox) findViewById(R.id.question_1_answer_D);
 
+        boolean question_1_good_answers = question_1_answer_A.isChecked() && question_1_answer_C.isChecked()
+                && question_1_answer_D.isChecked();
         boolean question_1_wrong_answers = question_1_answer_B.isChecked();
 
-        if (question_1_answer_A.isChecked() && !(question_1_wrong_answers)){ score+=1; } // adding 1 point per correct answer only if wrong answers are not checked
-        if (question_1_answer_C.isChecked() && !(question_1_wrong_answers)){ score+=1; }
-        if (question_1_answer_D.isChecked() && !(question_1_wrong_answers)){ score+=1; }
+        if (question_1_good_answers && !(question_1_wrong_answers)) {
+            score += 3;
+        }
+        ;
 
         RadioGroup question_2 = (RadioGroup) findViewById(R.id.question_2_answers);
-        if (question_2.getCheckedRadioButtonId() == R.id.question_2_answer_C) { score+=3; }
+        if (question_2.getCheckedRadioButtonId() == R.id.question_2_answer_C) {
+            score += 3;
+        }
 
         CheckBox question_3_answer_A = (CheckBox) findViewById(R.id.question_3_answer_A);
         CheckBox question_3_answer_B = (CheckBox) findViewById(R.id.question_3_answer_B);
         CheckBox question_3_answer_C = (CheckBox) findViewById(R.id.question_3_answer_C);
         CheckBox question_3_answer_D = (CheckBox) findViewById(R.id.question_3_answer_D);
 
-        boolean question_3_wrong_answers = question_3_answer_B.isChecked() || question_3_answer_D.isChecked();
+        boolean question_3_good_answers = question_3_answer_A.isChecked() && question_3_answer_C.isChecked();
+        boolean question_3_wrong_answers = question_3_answer_B.isChecked() && question_3_answer_D.isChecked();
 
-        if (question_3_answer_A.isChecked() && !(question_3_wrong_answers)){ score+=1; }
-        if (question_3_answer_C.isChecked() && !(question_3_wrong_answers)){ score+=1; }
+        if (question_3_good_answers && !(question_3_wrong_answers)) {
+            score += 3;
+        }
+
 
         RadioGroup question_4 = (RadioGroup) findViewById(R.id.question_4_answers);
-        if (question_4.getCheckedRadioButtonId() == R.id.question_4_answer_C) { score+=3; }
+        if (question_4.getCheckedRadioButtonId() == R.id.question_4_answer_C) {
+            score += 3;
+        }
 
         EditText question_5 = (EditText) findViewById(R.id.question_5_answer);
-        int question_5_answer = Integer.parseInt(question_5.getText().toString());
-        if (question_5_answer == 12) { score+=4; }
+        String question_5_answer = question_5.getText().toString().trim();
+        if (question_5_answer.length() == 0) {
+            Toast toast = Toast.makeText(getApplicationContext(), "Please provide answer to all question", Toast.LENGTH_LONG);
+            toast.show();
+        } else {
+            if (Integer.parseInt(question_5_answer) == 12) {
+                score += 3;
+            }
+        }
 
         return score;
     }
 
     public void submitQuiz(View view) {
         countPoints();
-        Context context = getApplicationContext();
         String scoreMessage = "You scored " + score + "/15 points!";
-        Toast toast = Toast.makeText(context,scoreMessage,Toast.LENGTH_LONG);
+        Toast toast = Toast.makeText(getApplicationContext(), scoreMessage, Toast.LENGTH_LONG);
         toast.show();
     }
 }
